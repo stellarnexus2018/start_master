@@ -11,7 +11,7 @@ public class Main {
     t1.runnerOne("Игоряша", s, d);*/
 
 
-    Dog d1 = new Dog();
+    /*Dog d1 = new Dog();
     d1.name = "Boss";
     d1.says = "ГАААААВ";
 
@@ -25,10 +25,15 @@ public class Main {
     d2.Gav();
 
     print("d3==d1 " + (d3==d1));
-    print("d3.equals(d1) " + d3.equals(d1));
+    print("d3.equals(d1) " + d3.equals(d1));*/
 
+    /*ForLoop fl = new ForLoop();
+    fl.testMoreChars();*/
 
-
+    /*Switches sw = new Switches();
+    sw.runOne(11);*/
+    Classes c = new Classes(1);
+    Classes c2 = new Classes();
 
   }
 }

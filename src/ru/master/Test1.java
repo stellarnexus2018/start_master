@@ -72,7 +72,7 @@ public class Test1 {
 
     int speed = rnd.nextInt(50);
     int time = rnd.nextInt(50);
-    int range = speed*time;
+    int range = speed * time;
 
     print("скорость: " + speed);
     print("время: " + time);
@@ -93,20 +93,31 @@ public class Test1 {
     int i = 1;
     int j = 1;
 
-    print("для интов: " + (i==j));
+    print("для интов: " + (i == j));
 
     Integer I = new Integer(1);
     Integer J = new Integer(1);
 
-    print("для интеджеров: " + (I==J));
+    print("для интеджеров: " + (I == J));
     print("для интеджеров: " + (I.equals(J)));
 
     String s1 = "qqq";
     String s2 = "qqq";
 
-    print("для стрингов: " + (s1==s2));
+    print("для стрингов: " + (s1 == s2));
     print("для стрингов: " + s1.equals(s2));
 
 
+  }
+
+  public void TestBinStr() {
+    int i = 153;
+    print(Integer.toBinaryString(i));
+    try {
+      i = Integer.parseInt("14");
+    } catch (NumberFormatException nfe) {
+      nfe.printStackTrace();
+    }
+    print(i);
   }
 }

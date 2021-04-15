@@ -32,8 +32,12 @@ public class Main {
 
     /*Switches sw = new Switches();
     sw.runOne(11);*/
-    Classes c = new Classes(1);
-    Classes c2 = new Classes();
+//    Classes c = new Classes(1);
+//    Classes c2 = new Classes();
+
+    Test1 t1 = new Test1();
+    t1.TestBinStr();
+
 
   }
 }

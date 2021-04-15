@@ -1,10 +1,16 @@
 package ru.master;
 //: object/HelloDate.java
+
 import java.lang.*;
 import java.util.Date;
+import java.util.Random;
 
-/** Простое описание класса
+import static ru.master.utils.PrinterSub.*;
+
+/**
+ * Простое описание класса
  * выводит дату
+ *
  * @author Игоряша
  * @author Главный Игоряша
  * @version 1.0
@@ -30,7 +36,8 @@ public class Test1 {
    *   <li>третья</li>
    *   <li>четвёртая</li>
    * </ol>
-   * @param _str Входящий параметр
+   *
+   * @param _str    Входящий параметр
    * @param _param1 param1 from arr
    * @param _param2 param2 from arr
    */
@@ -51,7 +58,55 @@ public class Test1 {
 //    System.out.println(System.getProperty("user.name"));
 //    System.out.println(System.getProperty("java.library.path"));
   }
-}/* Output: (55% match)
-Hello, it's:
-Wed Oct 05 14:39:36 MDT 2005
-*///:~
+
+  public void runnerTwo() {
+    print("рандом");
+    Random rnd = new Random();
+    print(rnd.nextInt(100));
+    print(rnd.nextFloat());
+    print(rnd.nextDouble());
+  }
+
+  public void calcRange() {
+    Random rnd = new Random();
+
+    int speed = rnd.nextInt(50);
+    int time = rnd.nextInt(50);
+    int range = speed*time;
+
+    print("скорость: " + speed);
+    print("время: " + time);
+    print("расстояние: " + range);
+  }
+
+  public void incrementOne() {
+    int speed = 1;
+
+    print("скорость: " + speed);
+    print("++speed: " + ++speed);
+    print("speed++: " + speed++);
+    print("скорость: " + speed);
+
+  }
+
+  public void equalityData() {
+    int i = 1;
+    int j = 1;
+
+    print("для интов: " + (i==j));
+
+    Integer I = new Integer(1);
+    Integer J = new Integer(1);
+
+    print("для интеджеров: " + (I==J));
+    print("для интеджеров: " + (I.equals(J)));
+
+    String s1 = "qqq";
+    String s2 = "qqq";
+
+    print("для стрингов: " + (s1==s2));
+    print("для стрингов: " + s1.equals(s2));
+
+
+  }
+}

@@ -35,8 +35,15 @@ public class Main {
 //    Classes c = new Classes(1);
 //    Classes c2 = new Classes();
 
-    Test1 t1 = new Test1();
-    t1.TestBinStr();
+    /*Test1 t1 = new Test1();
+    t1.TestBinStr();*/
+    Test2 t2 = new Test2(true);
+
+    //t2.checkIn();
+
+    t2 = new Test2(true);
+
+//    System.gc();
 
 
   }
